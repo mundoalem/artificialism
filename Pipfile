@@ -1,0 +1,37 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+atomicwrites = {version = "~=1.4.0", sys_platform = "== 'win32'"}
+bandit = "~=1.7.1"
+black = "~=21.12b0"
+coverage = "~=6.2"
+invoke = "~=1.6.0"
+mypy = "~=0.930"
+pytest = "~=6.2.5"
+Sphinx = "~=4.3.2"
+sphinx-rtd-theme = "~=1.0.0"
+twine = "~=3.7.1"
+
+[packages]
+fire = "~=0.4.0"
+
+[pipenv]
+allow_prereleases = true
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+build = "invoke build"
+clean = "invoke clean"
+docs = "invoke docs"
+help = "invoke -l"
+install = "invoke install"
+lint = "invoke lint"
+release = "invoke release"
+reset = "invoke reset"
+scan = "invoke scan"
+test = "invoke test"

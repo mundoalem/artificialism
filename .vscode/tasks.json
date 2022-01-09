@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "pipenv run build"
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "pipenv run clean"
+        },
+        {
+            "label": "Docs",
+            "type": "shell",
+            "command": "pipenv run docs"
+        },
+        {
+            "label": "Install",
+            "type": "shell",
+            "command": "pipenv run install"
+        },
+        {
+            "label": "Lint",
+            "type": "shell",
+            "command": "pipenv run lint"
+        },
+        {
+            "label": "Release",
+            "type": "shell",
+            "command": "pipenv run release"
+        },
+        {
+            "label": "Reset",
+            "type": "shell",
+            "command": "pipenv run reset"
+        },
+        {
+            "label": "Scan",
+            "type": "shell",
+            "command": "pipenv run scan"
+        },
+        {
+            "label": "Test",
+            "type": "shell",
+            "command": "pipenv run test"
+        }
+    ]
+}
